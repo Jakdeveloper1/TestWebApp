@@ -1,0 +1,12 @@
+name: test-node-file
+
+on:
+ push: [-master] 
+
+jobs: 
+  runs-on: ubuntu-latest
+  name: testing the react app
+  uses: "code-version@v3"
+  run: npm install
+  run: npm build
+  run: npm test
