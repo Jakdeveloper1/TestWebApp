@@ -86,7 +86,7 @@ import './App.css';
           target="_blank"
           rel="noopener noreferrer"
         >
-           Learn React and nothing
+           Learn
         </a>
 
         
