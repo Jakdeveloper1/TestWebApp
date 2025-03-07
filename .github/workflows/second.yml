@@ -27,9 +27,9 @@ jobs:
       
       - name: Run tests
         run: pytest
-  
-  deploy:
-    needs: test
+
+deploy:
+    needs: test  # Ensure deploy runs only after test passes
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
@@ -38,3 +38,4 @@ jobs:
       
       - name: Deploy application
         run: echo "Deploying Python application..."
+
